@@ -1,0 +1,60 @@
+.resume{
+    display: inline-flex;
+    background: #ffffff;
+    padding-right: 20px;
+    img, article{
+        width: 50%;
+    }
+    img{
+        border-top: 20px solid #273043;
+        border-bottom: 20px solid #273043;
+    }
+    article {
+        background: #273043;
+        color: #fff;
+        padding-left: 5rem;
+        padding-top: 10rem;
+    }
+} 
+
+
+.header{
+    position: fixed;
+    width: 100%; 
+    top: 0;
+    &__content{
+        position: absolute;
+        display: inline-flex;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 350px;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--grey100);
+    }
+    &__img {
+        width: 7rem;
+        height: 7rem;
+    }
+}
+.title{
+    width: 100%;
+    position: relative;
+    border-top: 3px solid var(--color1);
+    border-right: 3px solid var(--color1);
+    box-sizing: border-box;
+    margin-top: 10px;
+    &__text{
+        text-align: center;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        width: 3px;
+        left: 0;
+        background: var(--color1);
+        height: 18px;
+        top: -18px;
+    }
+}
